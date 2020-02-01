@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Newsletter Signup">
+    <meta name="author" content="Jordan Handy">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Newsletter Signup</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+<!-- Bootstrapped signup form -->
+  <body class="text-center">
+    <form class="form-signin" action="/" method="post">
+      <img class="mb-4" src="images/logo.png" alt="Jordan Handy Logo" width="200" height="200">
+      <h1 class="h3 mb-3 font-weight-normal">Sign Up to My Newsletter!</h1>
+      <label for="firstName" class="sr-only">First Name</label>
+      <input name= "firstName" type="text" id="firstName" class="form-control top" placeholder="First Name" autofocus required>
+      <label for="lastName" class="sr-only">Last Name</label>
+      <input name="lastName" type="text" id="lastName" class="form-control middle" placeholder="Last Name" required>
+      <label for="emailAddress" class="sr-only">Email Address</label>
+      <input name="emailAddress" type="email" id="emailAddress" class="form-control bottom" placeholder="Email Address" required >
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
+      <p class="mt-5 mb-3 text-muted">&copy; Jordan Handy, 2020`</p>
+    </form>
+  </body>
+</html>
