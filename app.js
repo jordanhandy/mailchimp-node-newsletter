@@ -1,9 +1,13 @@
+//////////////////////////////////// 
+// MAILCHIMP SIGNUP FORM
+////////////////////////////////////
 // Constants
+require("dotenv").config();
 const request = require('request');
 const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
-const port = 3000;
+const port = 3000 || process.env.PORT;
 
 app.use(bodyParser.urlencoded({
   extended: true
@@ -43,7 +47,7 @@ app.post("/", function(req, res) {
     url: "https://us4.api.mailchimp.com/3.0/lists/5d3872fc06",
     method: "POST",
     headers: {
-      "Authorization": "jordan c942c05d858a980a6850600b4267c3c4-us4"
+      "Authorization": process.env.AUTH_STRING
     },
     body: jsonData
   };
